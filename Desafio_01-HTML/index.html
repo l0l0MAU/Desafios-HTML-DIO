@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML- Primeiras Tags</title>
+    </head>
+    <body>
+        <h1>HTML</h1>
+        <hr>
+        <ul id="top">
+            <li><a href="#conceito">Conceito de HTML</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <ul>
+                <li><a href="#estrutural">Tags Estrutural</a></li>
+                <li><a href="#semantica">Tags Semânticas</a></li>
+                <li><a href="#pricipaistags">Principais Tags</a></li>
+            </ul>
+            <li><a href="#outrastags">Outras Tags</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+        <hr>
+        
+        <h2 id="conceito">Conceito de HTML</h2>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+        <p>HTML (Hypertext Markup Language) é o bloco de construção mais básico da web. O HTML é uma linguagem descritiva que especifica a estrutura de uma página web. HTML é uma linguagem de marcação que em conjunto com outras linguagens são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+               
+        <h2 id="tags">Tags</h2>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+        <p>As tags são a base da estrutura de qualquer página web. O conhecimento das principais tags HTML é vital para qualquer desenvolvedor front-end.</p>
+        <p>Abaixo descrevemos tags meramente estrutural e também tags que possuem <strong>função estrutural</strong> e <strong>semântica</strong>.</p>
+        
+        <h3 id="estrutural">Tags Estruturais</h3>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+        <p>As tags estrturais ou não semânticas são aquelas que não tem um propósito bem definido, podendo ser utilizadas como uma caixa para posicionar o conteúdo sem adicionar um contexto adicional, pode ser utilizadas para a estilização ou apenas para a organização do código.</p>
+
+        <h3 id="semantica">Tags Semânticas</h3>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+        <p>Semântica é um ramo da linguística que estuda o significado das palavras, frases e textos de uma língua. Então podemos afirmar que uma tag pode ter significado semântico e não apenas estrutural.</p>
+        
+        <p>O HTML não apenas estrutura documentos para a web, mas também descrever o significado do conteúdo presente nesses documentos por meio de tags semânticas. O HTML semântico tem como objetivo descrever o significado do conteúdo presente, tornando-o mais claro tanto para programadores quanto para browsers e outras engines de busca que processam essas informações.</p>
+        <p>Uma tag semântica é aquela que tem um propósito bem definido, ou que descreve o <strong>tipo</strong> do seu conteúdo. A tag <strongo>&lt;h&gt; representa um heading (um cabeçalho) e o número representa a hierarquia desse cabeçalho, ou seja, podemos afirmar que o conteúdo dessa tag &lt;h1&gt; é o <strong>cabeçalho principal da página</strong>. A tag <strong>&lt;h2&gt;</strong> representa um subcabeçalho e assim por diante até a tag <strong>&lt;h6&gt;</strong>, neste caso temos uma hierarquia que devemos observar e analisar dentro de um determinado contexto.</p>
+       
+        <h3 id="pricipaistags">Principais Tags</h3>
+        <body><small><a href="#top">(Voltar)</a></small></body></p>        
+        
+        <strong>Tags &lt;h1&gt;</strong> até <strong>&lt;h6&gt</strong>
+        <p>Utilizada para identificar dentro do HTML cabeçalhos e subcabeçalhos hierarquicamente organizados. Possui função semântica ajundando os mecanismos de busca.</p>
+
+        <strong>Tag &lt;p&gt;</strong>
+        <p>Tag utilizada para definir parágrafos.</p>
+
+        <strong>Tag &lt;strong&gt;</strong>
+        <p>Utilizado para destacar um texto ou parte dele. Não se caracteriza apenas por deixar o texto em negrito. Este elemento reprenta muito mais importância do que deixar o texto ou parte dele em negrito, possui forte função semântica. No passado era utlizado a tag <strong>&lt;b&gt;</strong> para deixar o texto em negrito. Atualmente não é mais considerada uma prática recomendada a utilização da tag <strong>&lt;b&gt;</strong> no <strong>HTML5</strong>.</p>
+        
+        <strong>Tag &lt;mark&gt;</strong>
+        <p>O elemento <strong>&lt;mark&gt;</strong> é usado para destacar parte de um texto. Não podemos confundir o elemento <strong>&lt;mark&gt;</strong> com o elemento <strong>&lt;strong&gt;</strong>, este é usado para denotar trechos de <strong>importância especial</strong>, aquele para denotar trechos de <mark>relevância especial</mark>, funciona como um marca texto.</p>
+
+        <strong>Tag &lt;small&gt;</strong>
+        <p>Faz um texto ou parte dele ser definido com um tamanho menor. Em HTML5 esta tag é usada para identificar <strong><small>itens de importância secundária</small></strong>, como avisos de direitos autorais, comentários laterias, etc.</p>
+
+        <strong>Tag &lt;i&gt;</strong>
+        <p>Utilizada para colocar um texto em parte dele em <strong><i>itálico</i></strong>. Trata-se de estética sem função semântica.</p>
+        <p><strong>Tag &lt;i&gt; VS. tag &lt;em&gt;</strong></p>
+        <p>Ambos as tags deixam o texto em itálico, porém, a tag <strong>&lt;em&gt;</strong> indica <strong><em>ênfase textual</em></strong>, aqui o elemento significa algo (semântica), já na tag <strong><i>&lt;i&gt;</i></strong> temos apenas um estilo, taquigrafia tipográfica.</p>
+
+        <p>Assim como a tag <strong>&lt;b&gt;</strong> para negrito, a tag <strong>&lt;i&gt;</strong> para itálico é uma das tags mais antigas do HTML, No entanto, assim como a tag <strong>&lt;b&gt;</strong>, o uso da tag <strong>&lt;i&gt;</strong> não é mais considerado uma prática recomendada no HTML 5. Em vez disso, a tag <strong>&lt;em&gt;</strong> é recomendada para enfatizar o texto em <em>itálico</em>.</p>
+
+        <strong>Tag &lt;u&gt;</strong>
+        <p>Originalmente utlizado para deixar um texto sublinhado, foi preterido no HTML 4.01, porém, no HTML 5 foi redefinido para identificar termos com erros ortográficos. Possui uso semântico.</p>
+
+        <strong>Tag &lt;ol&gt;</strong>
+        <p>É usado para criar uma lista ordenada. Uma lista ordenada é criada aninhando um ou mais elementos <strong>&lt;li&gt;</strong> entre as tags <strong>&lt;ol&gt;</strong> de abertura e fechamento.</p>
+        
+        <strong>Tag &lt;ul&gt;</strong>
+        <p>A tag <strong>&lt;ul&gt;</strong> é usado para definir uma lista não ordenada de itens. Use uma lista não ordenada para conter elementos <strong>&lt;li&gt;</strong> que não precisam ser apresentados em ordem numérica e podem ser reorganizados sem alterar o significado da lista.</p>
+        
+        <strong>Tag &lt;li&gt;</strong>
+        <p>A tag <strong>&lt;li&gt;</strong> define um item de lista que faz parte de uma lista ordenada e não ordenada de itens.</p>
+        
+        <strong>Tag &lt;a&gt;</strong>
+        <p>A tag <strong>&lt;a&gt;</strong> em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada <strong>&lt;a&gt;</strong> precisará indicar o destino do link.</p>
+
+        <strong>Tag &lt;hr&gt;</strong>
+        <p>Representa uma quebra temática entre elementos de nível de parágrafo (por exemplo , uma mudança da cena de uma história, ou uma mudança de tema com uma seção). Nas versões anteriores do HTML, representava uma linha horizontal. Pode continuar sendo exibida como uma linha horizontal nos navegadores, mas agora está definida em termos semânticos, em vez de termos de apresentação.</p>
+
+        <strong>Tag &lt;sub&gt;</strong>
+        <p>A <strong>&lt;sub&gt;</strong> especifica texto embutido que deve ser exibido como subscrito por razões exclusivamente tipográficas.</p>
+
+        <strong>Tag &lt;sup&gt;</strong>
+        <p>A tag <strong>&lt;sup&gt;</strong> especifica texto que deve ser exibido como sobrescrito por razões exclusivamente tipográficas.</p>
+
+        <strong>Tag <strong>&lt;blockquote&gt;</strong></strong>
+        <p>A tag <strong>&lt;blockquote&gt;</strong> indica que o texto incluído é uma longa citação. Normalmente é processado visualmente fica com recuo. Exemplo:</p>
+
+        <blockquote cite="https://www.infoescola.com/curiosidades/aeromodelismo/#:~:text=O%20Aeromodelismo%20%C3%A9%20a%20arte%20de%20planejar%20e,bal%C3%B5es%2C%20foguetes%2C%20entre%20outros%20-%2C%20constru%C3%ADdos%20pelos%20aeromodelistas.">
+            O Aeromodelismo é a arte de planejar e edificar aeromodelos – miniaturas de aeronaves utilizadas com objetivos experimentais, esportivos ou recreativos. Esta atividade envolve a manipulação e a manobra destes objetos de pequena dimensão – aviões, balões, foguetes, entre outros -, construídos pelos aeromodelistas.
+            </blockquote>
+
+
+        
+        <h2 id="outrastags">Outras Tags</h2>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+        <p>Vamos analisar outras tags sugeridas.</p>
+        
+        <p><strong>Tag &lt;font&gt;</strong></p>
+        <p>Não suportada atualmente em HTML 5. Esta tag foi utilizada em HTML 4 para especificar a face da fonte, o tamanho da fonte e a cor do texto. O que devemos utilizar? A boa prática é sempre utilizar o CSS para as situações acima citada.</p>
+
+        <p><strong>Tag &lt;del&gt;</strong></p>
+        <p>A tag &lt;del&gt; define um texto que foi excluído de um documento. Os navegadores demarcam o texto como tachado. Vejamos um exemplo:</p>
+        <p>Minha cor favorita é <strong><del>azul</del></strong> <strong><ins>vermelho</ins></strong>!</p>
+        <p>No caso acima utilizamos a tag <strong>&lt;ins&gt;</strong> para definir como texto novo inserido. Ambas as tags possuem significado prório (excluido e apagado), ou seja, pura semântica.</p>
+        
+        <p><strong>&lt;abbr&gt;</strong></p>
+        <p>Trata-se de um elemento de abreviação. Isso informa ao usuário o que significa a abreviatura ou sigla. Adicionar um atributo <strong>title</strong> permite fornecer uma expansão ou definição para a abreviatura ou acrônimo. Exemplo:</p>
+        <p><abbr title="Cascading Style Sheets">CSS</abbr>
+        é uma linguagem que descreve o estilo de um documento HTML.</p>
+        
+        <br>
+        <hr>
+        <h2 id="referencias">Referências</h2>
+        <p><small><a href="#top">(Voltar)</a></small></p>
+
+        <blockquote><a href="https://horadecodar.com.br/tags-html/">Hora de Codar</a></blockquote>
+        <blockquote><a href="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065">devmedia</a></blockquote>
+        <blockquote><a href="https://www.covildodev.com.br/artigo/html-semantico">covil do DEV</a></blockquote>
+        <blockquote><a href="https://www.significados.com.br/semantica/">Enciclopédia Significados</a></blockquote>
+        <blockquote><a href="https://blog.marcusoliveiradev.com.br/tags-obsoletas-html5/">Marcus Vinícius Blog Dev</a></blockquote>
+        <blockquote><a href="https://html.com/">HTML.COM</a></blockquote>
+        <blockquote><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">Web docs</a></blockquote>
+        <blockquote><a href="https://www.w3schools.com/TAGS/">w3schools</a></blockquote>
+    </body>
+</html>
